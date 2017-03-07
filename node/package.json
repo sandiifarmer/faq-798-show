@@ -1,0 +1,9 @@
+{
+  "name": "faq-798",
+  "version": "1.0.0",
+  "devDependencies": {
+  	"requirejs"	: "~2.2.0",
+    "clean-css" : "~3.4.9",
+    "fnv-plus"	: "~1.2.12"
+  }
+}

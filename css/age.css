@@ -1,0 +1,34 @@
+.age{
+	background:url(../img/age-bg.png) no-repeat center;
+	background-size:cover;
+}
+.age-center{
+	overflow:hidden; position:relative;
+	top:35%; width:60%; height:50px; line-height:50px;
+	border-radius:6px; margin:0 auto;
+	font-size:1.5em;
+}
+.age-input{
+	display:block; float:left;
+	width:60%; height:50px; line-height:50px;
+	padding-left:5%;
+	text-align:center;
+}
+.age-submit{
+	float:right;
+	width:35%; height:50px; line-height:50px;
+	background-color:#343434; color:white;
+	text-align:center;
+}
+.age-sprout{
+	position:absolute;
+	left:0; top:70%; width:100%; height:182px;
+	background:url(../img/age-sprout.png) no-repeat center;
+	background-size:contain;
+}
+.age-soil{
+	position:absolute;
+	left:1.5%; bottom:0; width:100%; height:45px;
+	background:url(../img/age-soil.png) no-repeat center;
+	background-size:contain;
+}

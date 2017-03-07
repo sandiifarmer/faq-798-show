@@ -1,0 +1,99 @@
+.phone{
+	background:url(../img/phone-bg.png) no-repeat center;
+	background-size:cover;
+}
+.phone-center{
+	position:relative; overflow:hidden;
+	top:22%; width:84%; height:25%;
+	border-radius:5px; margin:0 auto;
+	background-color:rgba(255,255,255,.5);
+}
+.phone-center>*{
+	position:absolute;
+	height:2.5em; line-height:2.5em;
+	border-radius:5px;
+	font-size:1em;
+}
+.phone-center>input{
+	display:block;
+	left:5%; width:50%;
+	padding-left:5%;
+}
+.phone-center>div{
+	right:5%; width:35%;
+	background-color:#ff5129; color:white;
+	text-align:center;
+}
+.phone-num{
+	top:12%;
+	border-top-right-radius:0; border-bottom-right-radius:0;
+}
+.phone-send{
+	top:12%;
+	border-top-left-radius:0; border-bottom-left-radius:0;
+}
+.phone-send.gray{background-color:#808080;}
+input.phone-code{
+	bottom:12%; width:46%;
+}
+.phone-submit{
+	bottom:12%;
+}
+.phone-btm{
+	position:absolute;
+	left:0; bottom:-5px; width:100%; height:50%;
+	background:url(../img/phone-btm.png) no-repeat bottom center;
+	background-size:102%;
+}
+.phone-dream{
+	position:absolute;
+	right:10%; bottom:35%; width:68px; height:68px;
+	background:url(../img/phone-dream.png) no-repeat center;
+	background-size:contain;
+}
+.phone-arm{
+	position:absolute;
+	left:40%; bottom:25%; width:90px; height:48px;
+	background:url(../img/phone-arm.png) no-repeat center;
+	background-size:contain;
+}
+.phone-dream{
+	-webkit-animation:phone-dream 2s ease-in-out;
+	animation:phone-dream 2s ease-in-out;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+@-webkit-keyframes phone-dream{
+	from{right:10%; bottom:35%;}
+	to{right:39%; bottom:14%;}
+}
+@keyframes phone-dream{
+	from{right:10%; bottom:35%;}
+	to{right:39%; bottom:14%;}
+}
+.phone-arm{
+	-webkit-animation:phone-arm 1s ease-in-out 2s;
+	animation:phone-arm 1s ease-in-out 2s;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+@-webkit-keyframes phone-arm{
+	from{
+		left:40%; bottom:25%;
+		-webkit-transform:rotate(0deg);
+	}
+	to{
+		left:42%; bottom:20%;
+		-webkit-transform:rotate(40deg);
+	}
+}
+@keyframes phone-arm{
+	from{
+		left:40%; bottom:25%;
+		transform:rotate(0deg);
+	}
+	to{
+		left:42%; bottom:20%;
+		transform:rotate(40deg);
+	}
+}

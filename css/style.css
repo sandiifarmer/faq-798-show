@@ -1,0 +1,93 @@
+@import url(../css/base.css);
+@import url(../css/anim.css);
+@import url(../lib/swiper-min.css);
+@import url(../css/cover.css);
+@import url(../css/age.css);
+@import url(../css/en.css);
+@import url(../css/art.css);
+@import url(../css/phone.css);
+@import url(../css/rs.css);
+
+.tip-box{
+	z-index:2000;
+	background:rgba(0,0,0,.7);
+}
+.tip-box>.center{
+	width:100%; height:40px; line-height:40px;
+	text-align:center; font-size:16px;
+}
+.tip-box span{
+	padding:20px 30px; border-radius:4px;
+	background:black; color:white;
+}
+.loading{
+	z-index:2000;
+	background-color:white;
+}
+.ld-in{
+	height:80px;
+	text-align:center;
+	line-height:40px;
+}
+.ld-num{font-size:20px;}
+.ld-pic{
+	position:absolute; overflow:hidden;
+	left:0; top:0; width:0; height:0;
+}
+.ld-pic>img{width:auto;}
+
+
+.swiper-slide{
+	overflow:hidden;
+	background-color:white;
+}
+.progress{
+	position:absolute;
+	bottom:16px; left:10%; width:80%; height:4px;
+	border-radius:2px;
+	background-color:#e0e0e0;
+}
+.progress:after{
+	position:absolute; content:'';
+	height:100%; left:0; top:0;
+	border-radius:2px;
+	background-color:#0f72bd;
+}
+.progress:before{
+	position:absolute; content:'加油，马上就要完成了';
+	top:100%; left:0; width:100%; height:16px; line-height:16px;
+	color:#808080;
+	font-size:12px; text-align:center;
+}
+.en1>.progress:after{width:6.67%;}
+.en2>.progress:after{width:13.34%;}
+.en3>.progress:after{width:20%;}
+.en4>.progress:after{width:26.67%;}
+.en5>.progress:after{width:33.35%;}
+.en6>.progress:after{width:40.02%;}
+.art1>.progress:after{width:46.69%;}
+.art2>.progress:after{width:53.36%;}
+.art3>.progress:after{width:60.03%;}
+.art4>.progress:after{width:66.7%;}
+.art5>.progress:after{width:73.37%;}
+.art6>.progress:after{width:80.04%;}
+.art7>.progress:after{width:86.71%;}
+.art8>.progress:after{width:93.38%;}
+.end{
+	background:url(../img/end-qr.png) no-repeat center;
+	background-size:55%;
+}
+
+
+.roll{
+	-webkit-animation:roll 3s ease-in-out infinite alternate;
+	animation:roll 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes roll{
+	from{-webkit-transform:rotate(0deg);}
+	to{-webkit-transform:rotate(360deg);}
+}
+@keyframes roll{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}

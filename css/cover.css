@@ -1,0 +1,68 @@
+.cover{
+	background:url(../img/cover-btm.jpg) no-repeat bottom center;
+	background-size:100%;
+}
+.cover-eye{
+	position:absolute;
+	width:10px; height:10px;
+	background:no-repeat center; background-size:contain;
+}
+.cover-eye:nth-child(1){
+	right:30%; bottom:37.9%;
+	background-image:url(../img/cover-eye-blue.png);
+	
+}
+.cover-eye:nth-child(2){
+	right:12%; bottom:35%;
+	background-image:url(../img/cover-eye-red.png);
+}
+.cover-logo{
+	position:absolute;
+	top:5%; left:5%; width:90%; height:25%;
+	background:url(../img/cover-logo.png) no-repeat top center;
+	background-size:contain;
+}
+.cover-t{
+	position:absolute;
+	left:15%; bottom:35%; line-height:1.5em;
+	color:#808080;
+	font-size:14px;
+}
+.cover-t b{color:#ff5129;}
+.cover-arrow{
+	position:absolute;
+	left:1.5%; bottom:5%; width:100%; height:23px;
+	background:url(../img/cover-arrow.png) no-repeat center;
+	background-size:contain;
+}
+.cover-tip{
+	position:absolute;
+	left:1.5%; bottom:0; width:100%; line-height:2.5em;
+	color:black;
+	text-align:center;
+}
+.cover-eye:nth-child(1){
+	-webkit-animation:covereye-1 1s linear infinite alternate;
+	animation:covereye-1 1s linear infinite alternate;
+}
+.cover-eye:nth-child(2){
+	-webkit-animation:covereye-2 1s linear infinite alternate;
+	animation:covereye-2 1s linear infinite alternate;
+}
+
+@-webkit-keyframes covereye-1{
+	from{right:30%;}
+	to{right:26%;}
+}
+@keyframes covereye-1{
+	from{right:30%;}
+	to{right:26%;}
+}
+@-webkit-keyframes covereye-2{
+	from{right:12%;}
+	to{right:8%;}
+}
+@keyframes covereye-2{
+	from{right:12%;}
+	to{right:8%;}
+}

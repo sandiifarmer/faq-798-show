@@ -1,0 +1,31 @@
+一、获取短信验证码接口：
+
+101.201.104.194/act/getCode.htm?mobile=15901039450
+
+入参：mobile：手机号
+
+返回结果示例：
+1、{"code":200,"message":"发送成功"}
+2、{"code":404,"message":"手机号不能为空"}
+3、{"code":500,"message":"发送失败，请稍后再试"}
+
+
+二、保存答题结果接口：
+http://101.201.104.194/act/saveResult.htm?code=1122&mobile=15901039450&type=1
+
+入参：
+mobile：手机号
+code：验证码
+type：题目类型（艺术题：1；英文题：2）
+age ： 年龄
+artAnswer ：艺术题结果
+englishAnswer ：英文题结果
+comment ：评论
+
+返回结果示例：
+1、{"code":200,"message":"保存成功"}
+2、{"code":404,"message":"手机号不能为空"}
+3、{"code":404,"message":"验证码不能为空"}
+4、{"code":404,"message":"答题类型不能为空"}
+5、{"code":500,"message":"验证码不正确"}
+6、{"code":500,"message":"保存失败"}

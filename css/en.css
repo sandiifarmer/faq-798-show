@@ -1,0 +1,165 @@
+.en-banner{
+	position:relative;
+	height:11%;
+	background:url(../img/en-banner.jpg) no-repeat center;
+	background-size:cover;
+}
+.en-title{
+	width:85%;
+	margin:1em auto;
+	font-size:1em;
+}
+.en-player{
+	position:relative;
+	width:70%; height:7%;
+	margin:1em 10% 1em 20%;
+	background:url(../img/audio.png) no-repeat center;
+	background-size:contain;
+}
+.en-player:before{
+	content:''; position:absolute;
+	left:-20%; top:0; width:20%; height:100%;
+	background:url(../img/en-logo.png) no-repeat center;
+	background-size:contain;
+}
+.en-player:after{
+	content:''; position:absolute;
+	width:5%; height:40%; left:8.5%; top:29%;
+	background:url(../img/play.png) no-repeat center;
+	background-size:contain;
+}
+.en-player.playing:after{background-image:url(../img/pause.png);}
+.en-ul{
+	width:70%; height:44%;
+	margin:1em auto;
+}
+.en-li{
+	position:relative; box-sizing:border-box;
+	display:-webkit-flex; display:flex; justify-content:space-between;
+	height:33%;
+	padding-top:14px; margin-bottom:4%;
+}
+.en-li:before{
+	position:absolute;
+	left:0; top:0; width:100%; height:14px; line-height:14px;
+	font-size:12px;
+}
+
+.en1 .en-li:nth-child(1):before{content:'A. MARKER';}
+.en1 .en-li:nth-child(2):before{content:'B. CANVAS';}
+.en1 .en-li:nth-child(3):before{content:'C. PENCIL';}
+
+.en2 .en-li:nth-child(1):before{content:'D. GLUE';}
+.en2 .en-li:nth-child(2):before{content:'E. SCISSORS';}
+.en2 .en-li:nth-child(3):before{content:'F. STRING';}
+
+.en3 .en-li:nth-child(1):before{content:'A. Use an eraser to rub out the pencil.';}
+.en3 .en-li:nth-child(2):before{content:'B. Use glue to stick the paper down.';}
+.en3 .en-li:nth-child(3):before{content:'C. Cut the paper.';}
+
+.en4 .en-li:nth-child(1):before{content:'A. Red';}
+.en4 .en-li:nth-child(2):before{content:'B. Yellow';}
+.en4 .en-li:nth-child(3):before{content:'C. Blue';}
+.en4 .en-li:nth-child(4):before{content:'D. Black';}
+
+.en5 .en-li:nth-child(1):before{content:'A. Long wavy line';}
+.en5 .en-li:nth-child(2):before{content:'B. Star';}
+
+.en6 .en-li:nth-child(1):before{content:'A. Which 2 colours make orange?';}
+.en6 .en-li:nth-child(2):before{content:'B. Which 2 colours make green?';}
+.en6 .en-li:nth-child(3):before{content:'C. Which 2 colours make purple?';}
+/*.en-li:nth-child(2):before{content:'B.';}
+.en-li:nth-child(3):before{content:'C.';}
+.en-li:nth-child(4):before{content:'D.';}
+.en2 .en-li:nth-child(1):before{content:'D.';}
+.en2 .en-li:nth-child(2):before{content:'E.';}
+.en2 .en-li:nth-child(3):before{content:'F.';}*/
+
+.en-submit{
+	width:40%; height:7%;
+	margin:25px auto;
+	background:url(../img/en-submit.png) no-repeat center;
+	background-size:contain;
+}
+.en1>.en-submit{
+	display:inline-block;
+	margin:10px 0 0.5em 17%;
+}
+.en-skip{
+	display:inline-block;
+	width:30%; height:8.6%;
+	margin-bottom:0.1em;
+	background:url(../img/en-skip.png) no-repeat center;
+	background-size:contain;
+}
+.en-tip{
+	color:#808080;
+	text-align:center;
+}
+.en4 .en-ul{height:50%;}
+.en4 .en-li{
+	justify-content:space-around;
+	height:23%;
+	margin-bottom:2%;
+}
+.en4 .en-one{width:20%;}
+.en4 .en-submit{margin-top:10px;}
+
+.en5 .en-one{border-radius:0;}
+
+.en-one{
+	width:28%; height:100%;
+	border-radius:50%; border:1px solid white;
+	background:no-repeat center; background-size:contain;
+}
+.en-one.checked{border-color:red;}
+.en-scissors{background-image:url(../img/en/scissors.png);}
+.en-pen{background-image:url(../img/en/pen.png);}
+.en-clay{background-image:url(../img/en/clay.png);}
+.en-glue{background-image:url(../img/en/glue.png);}
+.en-brush{background-image:url(../img/en/brush.png);}
+.en-box{background-image:url(../img/en/box.png);}
+.en-string{background-image:url(../img/en/string.png);}
+.en-pencil{background-image:url(../img/en/pencil.png);}
+.en-palette{background-image:url(../img/en/palette.png);}
+.en-cut{background-image:url(../img/en/cut.png);}
+.en-erase{background-image:url(../img/en/erase.png);}
+.en-fold{background-image:url(../img/en/fold.png);}
+.en-smear{background-image:url(../img/en/smear.png);}
+.en-rub{background-image:url(../img/en/rub.png);}
+.en-paint{background-image:url(../img/en/paint.png);}
+.en-roll{background-image:url(../img/en/roll.png);}
+.en-cut{background-image:url(../img/en/cut.png);}
+.en-flush{background-image:url(../img/en/flush.png);}
+.en-line-1{background-image:url(../img/en/line-1.png);}
+.en-line-2{background-image:url(../img/en/line-2.png);}
+.en-line-3{background-image:url(../img/en/line-3.png);}
+.en-triangle{background-image:url(../img/en/triangle.png);}
+.en-square{background-image:url(../img/en/square.png);}
+.en-star{background-image:url(../img/en/star.png);}
+
+.en-red{background-color:#e0192d;}
+.en-white{background-color:white; border-color:#e0e0e0;}
+.en-blue{background-color:#0f72bd;}
+.en-green{background-color:#1aaf54;}
+.en-purple{background-color:#933f94;}
+.en-yellow{background-color:#f2d31d;}
+.en-gray{background-color:#a5a5a5;}
+.en-black{background-color:black;}
+.en-red.checked{border-color:black;}
+
+.en6 .en-one{position:relative;}
+.en6 .en-one:before,
+.en6 .en-one:after{
+	content:''; position:absolute;
+	width:50%; height:50%; top:25%;
+	border-radius:50%;
+}
+.en6 .en-one:before{left:0;}
+.en6 .en-one:after{right:0;}
+.en6 .en-one:nth-child(1):before{background-color:#f2d31d;}
+.en6 .en-one:nth-child(1):after{background-color:#0f72bd;}
+.en6 .en-one:nth-child(2):before{background-color:#e0192d;}
+.en6 .en-one:nth-child(2):after{background-color:#f2d31d;}
+.en6 .en-one:nth-child(3):before{background-color:#0f72bd;}
+.en6 .en-one:nth-child(3):after{background-color:#e0192d;}
